@@ -1,0 +1,54 @@
+<svg width="1600" height="760" viewBox="0 0 1600 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="760" fill="#F7F1E8"/>
+  <rect x="40" y="40" width="1520" height="680" fill="#FBF7F0" stroke="#D9D1C6"/>
+
+  <text x="80" y="112" fill="#191614" font-family="Arial, sans-serif" font-size="42" font-weight="700">
+    Subscription + Entitlement Flow
+  </text>
+  <text x="80" y="150" fill="#6B655D" font-family="Arial, sans-serif" font-size="24">
+    The exact backend pattern relevant to BAM: checkout, webhook sync, gated features, and shared auth surfaces.
+  </text>
+
+  <rect x="90" y="260" width="210" height="160" fill="#FBF7F0" stroke="#191614" stroke-width="2"/>
+  <text x="120" y="315" fill="#191614" font-family="Arial, sans-serif" font-size="28" font-weight="700">1. Sign in</text>
+  <text x="120" y="355" fill="#6B655D" font-family="Arial, sans-serif" font-size="20">Shared auth</text>
+  <text x="120" y="385" fill="#6B655D" font-family="Arial, sans-serif" font-size="20">freelancer/client/admin</text>
+
+  <rect x="350" y="260" width="210" height="160" fill="#FBF7F0" stroke="#191614" stroke-width="2"/>
+  <text x="380" y="315" fill="#191614" font-family="Arial, sans-serif" font-size="28" font-weight="700">2. Checkout</text>
+  <text x="380" y="355" fill="#6B655D" font-family="Arial, sans-serif" font-size="20">Server action calls</text>
+  <text x="380" y="385" fill="#6B655D" font-family="Arial, sans-serif" font-size="20">Edge Function</text>
+
+  <rect x="610" y="260" width="210" height="160" fill="#E87237" stroke="#C95E28" stroke-width="2"/>
+  <text x="652" y="315" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="700">3. Stripe</text>
+  <text x="642" y="355" fill="white" font-family="Arial, sans-serif" font-size="20">Hosted checkout</text>
+  <text x="645" y="385" fill="white" font-family="Arial, sans-serif" font-size="20">subscription events</text>
+
+  <rect x="870" y="260" width="260" height="160" fill="#FBF7F0" stroke="#191614" stroke-width="2"/>
+  <text x="900" y="315" fill="#191614" font-family="Arial, sans-serif" font-size="28" font-weight="700">4. Webhook sync</text>
+  <text x="900" y="355" fill="#6B655D" font-family="Arial, sans-serif" font-size="20">`stripe-webhook` updates</text>
+  <text x="900" y="385" fill="#6B655D" font-family="Arial, sans-serif" font-size="20">subscriptions + entitlements</text>
+
+  <rect x="1180" y="260" width="290" height="160" fill="#1F3D5C" stroke="#173046" stroke-width="2"/>
+  <text x="1215" y="315" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="700">5. Gated features</text>
+  <text x="1215" y="355" fill="white" font-family="Arial, sans-serif" font-size="20">AI tools, portal access,</text>
+  <text x="1215" y="385" fill="white" font-family="Arial, sans-serif" font-size="20">realtime, billing states</text>
+
+  <line x1="300" y1="340" x2="350" y2="340" stroke="#191614" stroke-width="3"/>
+  <line x1="560" y1="340" x2="610" y2="340" stroke="#191614" stroke-width="3"/>
+  <line x1="820" y1="340" x2="870" y2="340" stroke="#191614" stroke-width="3"/>
+  <line x1="1130" y1="340" x2="1180" y2="340" stroke="#191614" stroke-width="3"/>
+
+  <polygon points="350,340 334,332 334,348" fill="#191614"/>
+  <polygon points="610,340 594,332 594,348" fill="#191614"/>
+  <polygon points="870,340 854,332 854,348" fill="#191614"/>
+  <polygon points="1180,340 1164,332 1164,348" fill="#191614"/>
+
+  <rect x="180" y="500" width="1240" height="120" fill="#F7F1E8" stroke="#D9D1C6"/>
+  <text x="220" y="548" fill="#191614" font-family="Arial, sans-serif" font-size="26" font-weight="700">
+    Why this matters for BAM
+  </text>
+  <text x="220" y="588" fill="#6B655D" font-family="Arial, sans-serif" font-size="22">
+    The same pattern works for coach subscriptions, academy tiers, tool add-ons, unified auth, and AI feature gating.
+  </text>
+</svg>

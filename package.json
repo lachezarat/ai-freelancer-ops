@@ -1,17 +1,28 @@
 {
-  "name": "aifo-dki2o6",
+  "name": "ai-freelancer-ops",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:stop": "bash ./scripts/dev-server.sh stop",
+    "dev:restart": "bash ./scripts/dev-server.sh restart",
+    "dev:status": "bash ./scripts/dev-server.sh status",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit -p tsconfig.typecheck.json",
+    "check": "pnpm lint && pnpm typecheck && pnpm build",
+    "supabase:start": "pnpm dlx supabase@latest start",
+    "supabase:reset": "pnpm dlx supabase@latest db reset"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.9.0",
+    "@supabase/supabase-js": "^2.99.2",
     "next": "16.1.7",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "stripe": "^20.4.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

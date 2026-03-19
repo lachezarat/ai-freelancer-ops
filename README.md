@@ -13,8 +13,6 @@
   ·
   <a href="https://github.com/lachezarat/ai-freelancer-ops">GitHub Repo</a>
   ·
-  <a href="./docs/case-study/contra-bam-case-study.md">Contra Case Study</a>
-  ·
   <a href="#architecture">Architecture</a>
   ·
   <a href="#local-setup">Local Setup</a>
@@ -73,21 +71,6 @@ This project is strongest as evidence for:
 - Authentication and authorization design
 - Billing and entitlement systems
 - Deployment-aware application architecture
-
-## Contra Case Study
-
-If you want to present this repo as a client-facing proof piece instead of a generic portfolio project, use these:
-
-- [Case study for BAM-style backend roles](./docs/case-study/contra-bam-case-study.md)
-- [Short application version](./docs/case-study/contra-bam-application.md)
-
-Supporting visuals:
-
-- [Architecture diagram](./docs/case-study/diagram-architecture.svg)
-- [Subscription lifecycle diagram](./docs/case-study/diagram-lifecycle.svg)
-- [Homepage screenshot](./docs/case-study/assets-home.png)
-- [Sign-in screenshot](./docs/case-study/assets-sign-in.png)
-- [Mobile screenshot](./docs/case-study/assets-home-mobile.png)
 
 ## Architecture
 

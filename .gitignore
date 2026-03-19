@@ -43,3 +43,6 @@ next-env.d.ts
 # local notes
 NEXT_SESSION.md
 response.md
+
+# local docs
+docs/

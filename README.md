@@ -285,13 +285,3 @@ pnpm build
 | `supabase/functions/create-checkout-session` | Stripe checkout orchestration |
 | `supabase/functions/create-customer-portal-session` | Stripe billing portal handoff |
 | `supabase/functions/stripe-webhook` | Stripe subscription lifecycle sync |
-
-## Interview Talking Points
-
-If you use this repo in a job application, the strongest engineering discussion points are:
-
-- Why the app is split between Vercel and Supabase instead of trying to host everything in one place
-- How RLS was used to support overlapping user roles without duplicating the entire data model
-- Why Stripe subscription state is synchronized by webhook instead of trusting frontend success callbacks
-- How AI providers are isolated behind Edge Functions so secrets and entitlements stay on trusted boundaries
-- Where the current architecture is intentionally simple and where you would evolve it for production scale
